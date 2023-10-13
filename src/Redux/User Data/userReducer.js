@@ -16,7 +16,6 @@ const initialState = {
   bookingHistory: [],
 };
 const userReducer = (state = initialState, { type, payload }) => {
-  console.log("user payload",payload)
   switch (type) {
     case USER_LOGIN_REQUEST:
       return { ...state, isLoading: true };

@@ -21,8 +21,8 @@ const breakpoints = {
 const theme = extendTheme({ breakpoints });
 root.render(
   <Auth0Provider
-  domain="dev-qxrrheycews4su13.us.auth0.com"
-    clientId="L5PrTfagLjmfF0jVTfXCAciBn1t4nTxc"
+  domain="dev-qphd61mv32qaritk.us.auth0.com"
+    clientId="DS9blaBDAbXpS0NBMN9zzwnn73y8RKj7"
     authorizationParams={{
       redirect_uri: `${window.location.origin}/profile`
     }}

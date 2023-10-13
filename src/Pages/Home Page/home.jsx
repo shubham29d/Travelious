@@ -10,7 +10,6 @@ import { useSelector } from "react-redux";
 import Footer from "../../Components/footer";
 const Home = () => {
   const { homePage } = useSelector((store) => store.tourDetailReducer);
-  console.log(homePage);
   return (
     <>
       <Navbar />

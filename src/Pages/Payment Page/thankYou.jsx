@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from "./thankyou.module.css"
-// import Navigate from "react-router-dom"
+import {Navigate} from "react-router-dom"
 import success from "./success.gif"
+import { useNavigate } from "react-router-dom";
 const PaymentConfirm = () => {
+const navigate=useNavigate();
 
-  // setTimeout(()=>{
-  //  <Navigate to="/"/>
-  // },3000)
   return (
     <div>
        <>
@@ -63,6 +62,9 @@ const PaymentConfirm = () => {
   <h2 id='h2'>
     Thank You <span id={styles.username} /> for booking
   </h2>
+  {  setTimeout(()=>{
+   return navigate("/");
+  },3000)}
 </>
     </div>
       )
